@@ -1,8 +1,14 @@
 ![maven](https://img.shields.io/badge/python-3.11%2B-blue)
 # ChatGPT制作的api接口
 ## 部署教程
-* 下载仓库中的 总和.py
-* 
+* 下载仓库中的 requirements.txt运行以下内容
+```
+pip install -r requirements.txt
+```
+* 下载 总和.py在命令行运行：
+```
+py 总和.py
+```
 ## 声明
 
 此项目仅用于学习交流，请勿用于非法用途
