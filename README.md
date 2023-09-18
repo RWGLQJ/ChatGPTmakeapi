@@ -80,3 +80,15 @@ GET http://localhost:5000/api/bing-image?format=json
 请求示例：
 GET http://localhost:5000/ip_location?ip=192.168.0.1
 ```
+## IP 地址定位接口(全球)：/ip_quanqiu
+* 通过调用高德地图API以及GeoLite2-City数据库获取指定IP地址的地理位置信息。
+* 此接口需要GeoLite2-City数据库，自行前往https://dev.maxmind.com/geoip/docs/databases/city-and-country下载
+* 从请求参数中获取 IP 地址。
+* 返回 JSON 格式的定位信息。
+```
+请求方式：GET
+请求参数：
+  ip：IP 地址
+请求示例：
+GET http://localhost:5000/ip_location?ip=192.168.0.1
+```
