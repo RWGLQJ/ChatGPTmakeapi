@@ -102,5 +102,5 @@ GET http://localhost:5000/ip_location?ip=192.168.0.1
 请求参数：
   up_id：b站up主的id
 请求示例：
-GET http://localhost:5000/api/text](http://localhost:5000/api/up_info?up_id=457790653
+GET http://localhost:5000/api/up_info?up_id=457790653
 ```
