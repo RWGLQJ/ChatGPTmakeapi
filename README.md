@@ -92,3 +92,15 @@ GET http://localhost:5000/ip_location?ip=192.168.0.1
 请求示例：
 GET http://localhost:5000/ip_location?ip=192.168.0.1
 ```
+
+
+## 获取接口信息接口：/api/up_info
+* 获取b站up信息的接口
+* 此接口使用selenium渲染完整的页面并取出数据，所以响应速度较慢
+```
+请求方法：GET
+请求参数：
+  up_id：b站up主的id
+请求示例：
+GET http://localhost:5000/api/text](http://localhost:5000/api/up_info?up_id=457790653
+```
