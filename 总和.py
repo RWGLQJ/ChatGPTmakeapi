@@ -26,17 +26,19 @@ def get_hot_videos():
         response = requests.get(url)
         data = response.json()
 
-        # 解析响应数据，提取热播视频信息
+        # 解析响应数据，提取热播视频信息（包括vb号）
         hot_videos = []
         for video in data['data']['list']:
             title = video['title']
             play_count = video['stat']['view']
-            hot_videos.append({'title': title, 'play_count': play_count})
+            vb_number = video['bvid']
+            hot_videos.append({'title': title, 'play_count': play_count, 'vb_number': vb_number})
 
         return jsonify({'hot_videos': hot_videos})
 
     except Exception as e:
         return jsonify({'error': str(e)})
+
 
 #邮箱发信api
 #email = Flask(__name__)
