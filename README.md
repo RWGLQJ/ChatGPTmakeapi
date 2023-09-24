@@ -94,7 +94,7 @@ GET http://localhost:5000/ip_location?ip=192.168.0.1
 ```
 
 
-## 获取接口信息接口：/api/up_info
+## UP信息获取接口：/api/up_info
 * 获取b站up信息的接口
 * 此接口使用selenium渲染完整的页面并取出数据，所以响应速度较慢
 ```
@@ -103,4 +103,15 @@ GET http://localhost:5000/ip_location?ip=192.168.0.1
   up_id：b站up主的id
 请求示例：
 GET http://localhost:5000/api/up_info?up_id=457790653
+```
+
+## b站视频信息获取接口：/api/vb_info
+* 获取b站视频信息的接口
+* 此接口使用selenium渲染完整的页面并取出数据，所以响应速度较慢
+```
+请求方法：GET
+请求参数：
+  vb_id：视频vb号
+请求示例：
+GET http://127.0.0.1:5000/api/bvideo_info?vb_id=BV1cu4y117zH
 ```
